@@ -58,6 +58,7 @@ public class ReserveHeaderContent extends JPanel {
 		totalTimePanel = new TextFieldPanel("총  ");
 		totalTimePanel.setBounds(642, 31, 122, 35);
 		add(totalTimePanel);
+		totalTimePanel.getTextField().setFocusable(false);
 		totalTimePanel.getTextField().setText("0");
 
 		JLabel lblNewLabel = new JLabel("시간");
