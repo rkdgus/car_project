@@ -66,6 +66,14 @@ public class ReserveHeaderContent extends JPanel {
 		add(lblNewLabel);
 
 		JButton btnSearch = new JButton("차량검색");
+		btnSearch.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				int totalTime = Integer.parseInt(totalTimePanel.getTextField().getText());
+				if(totalTime==0){
+					JOptionPane.showMessageDialog(null, "날짜를 정확하게 입력하세요");
+				}
+			}
+		});
 		btnSearch.setBounds(833, 22, 122, 41);
 		add(btnSearch);
 
